@@ -28,7 +28,8 @@ const CreateActivityForm = ({ activities, setActivities }) => {
           alert("activity exists, please create a new unique one");
         }
         const activityCopy = [...activities];
-        const newActivities = activityCopy.push(result);
+        activityCopy.push(result);
+        const newActivities = activityCopy;
         console.log(newActivities)
         setActivities(newActivities);
         // console.log(result);

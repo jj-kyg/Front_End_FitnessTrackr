@@ -29,7 +29,9 @@ const Activities = () => {
               Find your favorite activity and get to it! Or add something new...
             </p>
             <div className="activities-list-container">
-            {activities.map((activity, index) => {
+            
+            {
+              activities.map((activity, index) => {
               return (
                 <section className="activities-list">
                   <ul key={index}>
@@ -39,7 +41,9 @@ const Activities = () => {
                   </ul>
                 </section>
               );
-            })}
+            })
+            
+            }
             </div>
           </div>
           <div className="activities-img-container">
